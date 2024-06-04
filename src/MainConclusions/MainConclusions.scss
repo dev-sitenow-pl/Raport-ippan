@@ -1,0 +1,24 @@
+@import '../variables';
+@import '../core-flex';
+
+.tabel-info {
+  @extend .box-flex;
+  @extend .column;
+  @extend .ai-center;
+
+  &__box {
+    @media #{$md} {
+      width: 50%;
+    }
+
+    &.text {
+      padding: 1rem;
+      font-size: .9rem;
+    }
+  }
+}
+
+.infogram-embed {
+  margin: 0 auto;
+  width: 100%;
+}

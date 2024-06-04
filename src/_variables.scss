@@ -1,0 +1,38 @@
+$white: #fff;
+$black: #000;
+
+$grey: #272727;
+
+$primary-color: $grey;
+
+$violet: #461e5d;
+
+$blue: #91c0cd;
+
+$red: #CA382B;
+
+$orange: #e84819;
+
+$yellow: #EAB934;
+
+$green: #44884E;
+$green2: #377a43;
+
+$lp-max-width: 1430px;
+$content-width: 1300px;
+
+$grid_cols: 12;
+$xxl: "(min-width: 1440px)";
+$xl: "(min-width: 1367px)";
+$lg: "(min-width: 1200px)";
+$md: "(min-width: 992px)";
+$sm: "(min-width: 768px)";
+$xs: "(min-width: 480px)";
+
+//before point
+$b-xxl: "(max-width: 1439px)";
+$b-xl: "(max-width: 1366px)";
+$b-lg: "(max-width: 1199px)";
+$b-md: "(max-width: 991px)";
+$b-sm: "(max-width: 767px)";
+$b-xs: "(max-width: 479px)";

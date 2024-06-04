@@ -1,0 +1,442 @@
+@import './variables';
+@import './core-flex';
+
+@font-face {
+  font-family: 'futura_ptbold';
+  src: url('../fonts/futura/futuraptbold-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptbold-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptbold-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptbold-webfont.svg#futura_ptbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'futura_ptheavy';
+  src: url('../fonts/futura/futuraptheavy-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptheavy-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptheavy-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptheavy-webfont.svg#futura_ptheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'futura_ptdemi';
+  src: url('../fonts/futura/futuraptdemi-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptdemi-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptdemi-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptdemi-webfont.svg#futura_ptdemi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'futura_ptmedium';
+  src: url('../fonts/futura/futuraptmedium-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptmedium-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptmedium-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptmedium-webfont.svg#futura_ptmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'futura_ptbook';
+  src: url('../fonts/futura/futuraptbook-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptbook-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptbook-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptbook-webfont.svg#futura_ptbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'futura_ptlight';
+  src: url('../fonts/futura/futuraptlight-webfont.woff2') format('woff2'),
+    url('../fonts/futura/futuraptlight-webfont.woff') format('woff'),
+    url('../fonts/futura/futuraptlight-webfont.ttf') format('truetype'),
+    url('../fonts/futura/futuraptlight-webfont.svg#futura_ptlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-size: 87.5%; //14px
+
+  @media #{$md} {
+    font-size: 88%;
+  }
+
+  @media #{$lg} {
+    font-size: 98%;
+  }
+
+}
+
+body {
+  font-family: 'futura_ptbook';
+  line-height: 1.6;
+  color: $primary-color;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+
+  br {
+    display: none;
+
+    @media #{$lg} {
+      display: inline;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'futura_ptbold';
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+h1 {
+  font-size: 1.3em;
+
+  @media #{$md} {
+    font-size: 2.5rem;
+  }
+
+  /* 40px */
+  font-weight: 900;
+}
+
+h2 {
+  @media #{$md} {
+    font-size: 2rem;
+  }
+
+  /* 32px */
+}
+
+h3 {
+  @media #{$md} {
+    font-size: 1.45rem;
+  }
+
+  /* 28px */
+}
+
+h4 {
+  @media #{$md} {
+    font-size: 1.35rem;
+  }
+
+  /* 24px */
+}
+
+h5 {
+  @media #{$md} {
+    font-size: 1.25rem;
+  }
+
+  /* 20px */
+}
+
+h6 {
+  @media #{$md} {
+    font-size: 1rem;
+  }
+
+  /* 16px */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-family: 'futura_ptdemi';
+  font-size: 1rem;
+  /* Większy rozmiar fontu dla cytatów */
+  font-style: italic;
+  margin: 3rem 0 4rem;
+  padding: 1.5rem;
+  color: #555;
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 15px;
+
+  // @media #{$sm} {
+  //   margin: 5rem 0;
+  // }
+
+  @media #{$md} {
+    margin: 5rem 0;
+    font-size: 1.25rem;
+  }
+
+  &:before,
+  &:after {
+    font-size: 5rem;
+
+    @media #{$md} {
+      font-size: 10rem;
+    }
+  }
+
+  &:before {
+    content: "“";
+    line-height: 0.8;
+    position: absolute;
+    left: -12px;
+    top: -10px;
+    color: $orange;
+
+    @media #{$md} {
+      top: -40px;
+    }
+  }
+
+  &:after {
+    content: "”";
+    line-height: 0.8;
+    position: absolute;
+    right: 30px;
+    bottom: -39px;
+    color: $orange;
+
+    @media #{$md} {
+      bottom: -107px;
+    }
+  }
+}
+
+cite {
+  font-family: 'futura_ptheavy';
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+section {
+  position: relative;
+  margin: 0 auto;
+  max-width: $lp-max-width;
+  padding: 0 15px;
+
+  .target-scroll {
+    position: absolute;
+    display: block;
+    top: -50px;
+
+    @media #{$lg} {
+      top: -56px;
+    }
+  }
+
+  +section {
+    margin-top: 2rem;
+
+    @media #{$sm} {
+      margin-top: 3rem;
+    }
+
+    @media #{$md} {
+      margin-top: 4rem;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.title-box {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+
+  @media #{$md} {
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+  }
+
+  h2,
+  h3 {
+    color: $grey;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #44884E;
+    display: inline-block;
+  }
+
+  h2 {
+    font-size: 2rem;
+
+    @media #{$sm} {
+      font-size: 3rem;
+    }
+
+    @media #{$md} {
+      font-size: 4rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+
+    @media #{$sm} {
+      font-size: 2rem;
+    }
+
+    @media #{$md} {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.title-banner {
+  position: relative;
+
+
+  .title-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background: rgba($white, .6);
+    margin: 0;
+  }
+}
+
+.alternately-boxes {
+  margin: 1rem auto 2rem;
+  max-width: 1100px;
+
+  @media #{$sm} {
+    margin: 2rem auto 4rem;
+  }
+
+  &__box {
+    @extend .box-flex;
+
+    &__title {
+      width: 100%;
+
+
+      @media #{$sm} {
+        padding: 1rem;
+      }
+
+      @media #{$md} {
+        width: 40%;
+        padding: 1rem 2rem;
+      }
+
+      h3 {
+        margin: 0;
+        padding-bottom: .5rem;
+        text-align: left;
+        font-size: 1.3rem;
+        border-bottom: 10px solid $grey;
+      }
+    }
+
+    &__text {
+      width: 100%;
+
+      @media #{$md} {
+        width: 60%;
+      }
+    }
+
+    &:nth-child(even) {
+      @media #{$sm} {
+        flex-direction: row-reverse;
+      }
+
+      .alternately-boxes__box__title {
+        h3 {
+          @media #{$md} {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    +.alternately-boxes__box {
+      margin-top: 1rem;
+
+      @media #{$sm} {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &.img-include {
+    display: flex;
+    flex-direction: column;
+
+    .alternately-boxes__box {
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 2;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.ul-non-style {
+  list-style: none;
+  padding-inline-start: 0px;
+
+  a,
+  span {
+    color: $orange;
+  }
+}
+
+.current-state {
+  margin: 1rem 0 0;
+
+  @media #{$sm} {
+    margin: 0;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../variables';
+@import '../core-flex';
+
+.first-boxes {
+  margin: 2rem 0;
+  @extend .box-flex;
+
+  .box {
+    width: 100%;
+    padding: 0 1rem;
+
+    @media #{$md} {
+      width: calc(100% / 3);
+    }
+  }
+}

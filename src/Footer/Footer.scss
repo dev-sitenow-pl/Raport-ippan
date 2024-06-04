@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../core-flex';
+
+footer,
+.logos-boxes {
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 1rem;
+  max-width: $lp-max-width;
+  padding: .5rem 15px;
+  background: $green2;
+  color: $white;
+}
+
+.footer-title-box {
+  margin-right: 1rem;
+
+  h2 {
+    font-family: 'futura_ptdemi';
+    margin: 0;
+    font-size: 1.5rem;
+
+  }
+}
+
+.footer-contact-box {
+  a {
+    color: $white
+  }
+}
+
+.logos-boxes {
+  @extend .box-flex;
+  @extend .ai-center;
+  @extend .row;
+  // flex-wrap: wrap;
+  max-width: 1000px;
+
+  &__box {
+    padding: .5rem;
+
+    &:nth-child(1) {
+      margin-right: 1rem;
+
+      @media #{$sm} {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
