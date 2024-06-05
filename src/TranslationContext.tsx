@@ -70,7 +70,7 @@ interface MainConclusions extends Blockquote {
   title3: string;
   text3: string;
   tableText: string;
-  tableImage: string;
+  tableImage?: string;
 }
 
 interface Section3 extends Blockquote {
@@ -100,12 +100,14 @@ interface Section6 {
   title1: string;
   title2: string;
   infoText: string;
+  title3: string;
 }
 
 interface Section7 {
   titleMain: string;
   text1: string;
   text2: string;
+  text3: string;
 }
 
 interface Footer {

@@ -7,6 +7,7 @@ const BannerStart = () => {
   const { translations } = useContext(TranslationContext);
   return <>
     <section>
+      <span id="sectionTarget__6" className="target-scroll"></span>
       <div className="main-banner">
         <img src="images/banner-start.jpg" alt="" />
         <div className="main-banner__text">

@@ -47,9 +47,28 @@ const Menu = () => {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const handleClickLogo = (index: number) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+
+    event.preventDefault();
+    let target = document.querySelector(`#sectionTarget__${index}`);
+    if (isOpen) {
+
+      handleMenuToggle();
+    }
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
+  };
 
   return <>
     <nav className="menu">
+      <div className="logo">
+        <a href="#sectionTarget__6" onClick={handleClickLogo(6)}>
+          <img src="images/logos/Norway_grants@4x.png" alt="" />
+        </a>
+      </div>
       <MenuBtnMobile handleMenuToggle={handleMenuToggle} />
       <div className='menu-box-list'>
         <ul className="ul">

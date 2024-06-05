@@ -41,6 +41,10 @@ footer {
   &__box {
     padding: .5rem;
 
+    img {
+      max-height: 123px;
+    }
+
     &:nth-child(1) {
       margin-right: 1rem;
 

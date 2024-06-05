@@ -62,13 +62,6 @@ const MainConclusions = () => {
       </div>
 
       <div className="tabel-info">
-        <div className="tabel-info__box">
-          <img src={translations.mainConclusions.tableImage} alt={translations.mainConclusions.tableText} />
-        </div>
-        <div className="tabel-info__box text">
-          <div className="tabel-info__box__text" dangerouslySetInnerHTML={{ __html: translations.mainConclusions.tableText }} />
-
-        </div>
         <div
           id="myInfogramPl"
           className="infogram-embed"
@@ -85,6 +78,14 @@ const MainConclusions = () => {
           data-title="World Map"
           style={{ display: language === 'en' ? 'block' : 'none' }}
         ></div>
+        {/* <div className="tabel-info__box">
+          <img src={translations.mainConclusions.tableImage} alt={translations.mainConclusions.tableText} />
+        </div> */}
+        <div className="tabel-info__box text">
+          <div className="tabel-info__box__text" dangerouslySetInnerHTML={{ __html: translations.mainConclusions.tableText }} />
+
+        </div>
+
 
 
       </div>

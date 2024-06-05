@@ -7,13 +7,19 @@
   @extend .ai-center;
 
   &__box {
-    @media #{$md} {
-      width: 50%;
+
+
+    &.image {
+      @media #{$md} {
+        width: 50%;
+      }
     }
 
     &.text {
+      max-width: 100%;
       padding: 1rem;
       font-size: .9rem;
+      text-align: center;
     }
   }
 }

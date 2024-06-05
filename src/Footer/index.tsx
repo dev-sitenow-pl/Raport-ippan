@@ -8,7 +8,7 @@ const Footer = () => {
     <section>
       <div className="logos-boxes">
         <div className="logos-boxes__box">
-          <img src="images/logos/logo_fn.png" alt="" />
+          <img src="images/logos/Norway_grants@4x.png" alt="" />
         </div>
         <div className="logos-boxes__box">
           <img src="images/logos/ncn_logo_en.png" alt="" />
