@@ -8,19 +8,19 @@ const Footer = () => {
     <section>
       <div className="logos-boxes">
         <div className="logos-boxes__box">
-          <img src="images/logos/Norway_grants@4x.png" alt="" />
+          <img src="images/webp/logos/Norway_grants@4x.webp" alt="" />
         </div>
         <div className="logos-boxes__box">
-          <img src="images/logos/ncn_logo_en.png" alt="" />
+          <img src="images/webp/logos/ncn_logo_en.webp" alt="" />
         </div>
         <div className="logos-boxes__box">
-          <img src="images/logos/Logo_IPPAN-e1648466994306.jpg" alt="" />
+          <img src="images/webp/logos/Logo_IPPAN-e1648466994306.webp" alt="" />
         </div>
         <div className="logos-boxes__box">
-          <img src="images/logos/university-of-oslo.png" alt="" />
+          <img src="images/webp/logos/university-of-oslo.webp" alt="" />
         </div>
         <div className="logos-boxes__box">
-          <img src="images/logos/swps-nowe-logo.png" alt="" />
+          <img src="images/webp/logos/swps-nowe-logo.webp" alt="" />
         </div>
 
       </div>

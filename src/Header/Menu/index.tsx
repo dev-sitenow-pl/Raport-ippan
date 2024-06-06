@@ -66,7 +66,7 @@ const Menu = () => {
     <nav className="menu">
       <div className="logo">
         <a href="#sectionTarget__6" onClick={handleClickLogo(6)}>
-          <img src="images/logos/Norway_grants@4x.png" alt="" />
+          <img src="images/webp/logos/Norway_grants@4x.webp" alt="" />
         </a>
       </div>
       <MenuBtnMobile handleMenuToggle={handleMenuToggle} />

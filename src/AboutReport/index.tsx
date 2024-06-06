@@ -25,7 +25,7 @@ const AboutReport = () => {
           <p dangerouslySetInnerHTML={{ __html: translations.aboutReport.pText3 }} />
         </div>
       </div>
-      <img src="images/banner-2.jpg" alt="" />
+      <img src="images/webp/banner-2.webp" alt="" />
     </section>
 
   </>

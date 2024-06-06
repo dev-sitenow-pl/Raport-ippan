@@ -9,7 +9,7 @@ const Section5 = () => {
     <section>
 
       <div className="title-banner">
-        <img src="images/banner-5.jpg" alt="" />
+        <img src="images/webp/banner-5.webp" alt="" />
       </div>
       <div className="alternately-boxes">
         <AlternatelyBox

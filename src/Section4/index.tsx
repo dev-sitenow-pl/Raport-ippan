@@ -9,7 +9,7 @@ const Section4 = () => {
   return <>
     <section>
       <div className="title-banner">
-        <img src="images/banner-4.jpg" alt="" />
+        <img src="images/webp/banner-4.webp" alt="" />
       </div>
       <div className="alternately-boxes">
         <AlternatelyBox
